@@ -12,8 +12,5 @@ jobs:
       - name : Set up python en 3.9
         uses: actions/setup-python@v3
           with:
-            python-version: '3.9' 
-      - run: python my_script.py
-
-
+            python-version: 3.9
 
