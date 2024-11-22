@@ -1,4 +1,4 @@
-name: Mon Premier Workflow
+name: Mon Deuxième Workflow
 
 on:
   push:
@@ -9,5 +9,11 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - name: Print Hello World
-        run: echo "Hello shrimps"
+      - name : Set up python en 3.9
+        uses: actions/setup-python@v3
+          with:
+            python-version: '3.9' 
+      - run: python my_script.py
+
+
+
